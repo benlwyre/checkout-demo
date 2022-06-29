@@ -19,7 +19,7 @@ app.get("/api", async (req, res) => {
             'Authorization': 'Bearer ' + process.env.AUTHKEY}
         
         })
-    res.json({ url: reservation.data.url });
+    res.json({ reservation: reservation.data.reservation });
     }
     catch (err)
     {
